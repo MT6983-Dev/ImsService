@@ -60,8 +60,7 @@
                 <action android:name="android.telephony.ims.ImsService"/>
             </intent-filter>
         </service>
-        <service android:enabled="true" android:exported="true" android:name="com.mediatek.ims.ImsRilService" android:permission="android.permission.BIND_IMS_SERVICE"/>
-        <receiver android:exported="false" android:name="com.mediatek.ims.ImsKeeperReceiver" androidprv:systemUserOnly="true">
+        <receiver android:exported="false" android:name="com.mediatek.ims.ImsKeeperReceiver">
             <intent-filter>
                 <action android:name="android.telephony.action.CARRIER_CONFIG_CHANGED"/>
             </intent-filter>
